@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+  {% block head_block %}
+  <title>Other</title>
+  {%  endblock %}
+  {% block body_block %}
+    <h1>WELCOME TO OTHER</h1>
+    <h2>This is an example of template inheretance!</h2>
+    <a href="{% url 'basic_app:relative' %}">LINK TO RELATIVE</a><br>
+    <a href="{% url 'admin:index' %}">LINK TO THE ADMIN PAGE</a><br>
+    <a href="{% url 'index' %}">LINK TO HOME PAGE</a>
+  {% endblock %}
